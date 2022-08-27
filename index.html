@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+ <title>Two Mines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Serif+Pro:ital,wght@0,200;1,400&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,600;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="main">
+        <a href="#" class="logo">2MineS</a>
+    </div>
+    
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href=".//contactus.html">Contact</a></li>
+            </ul>
+    </header>
+
+
+    <section>
+        <img src="images/1.png" id="stars">
+        <img src="images/2.png" id="moon">
+        <img src="images/3.png" id="mountains_behind">
+        <h1 id="text"> 2MineS</h1>
+        <a href=".//abt.html" id="btn">Sign Up</a>
+        <img src="images/4.png" id="mountains_front">
+    </section>
+
+
+
+    <div class="sec" id="sec">
+        <img src="images/buy-and-sell.webp " id="bcu">
+        <h2>The World's Fastest Growing <br>Crypto App</h2>
+        <h3>☑️ Join 50m+ users buying and selling 250+ cryptocurrencies at true cost<br>
+            ☑️Spend with the Crypto.com Visa Card and get up to 5% back<br>
+            ☑️Grow your portfolio by receiving rewards up to 14.5% on your crypto assets</h3> 
+        <h4>SECURELY BUY, SELL, STORE, SEND and TRACK</h4>
+        <h5>Buy Crypto At True Cost</h5>
+        <h6>Buy and sell 250+ cryptocurrencies with 20+ fiat currencies using bank transfers or your credit/debit card.</h6>
+    </div>
+<div class="gif" id="gif">
+    <video autoplay muted loop id="myVideo">
+        <source src="images/cards.mp4" type="video/mp4">
+      </video>
+    <h1>The only card you need</h1>
+    <h2>Enjoy up to 5% back on all spending with your sleek, pure metal card.<br>
+        No annual fees. Top-up with fiat or crypto.</h2>
+        <a href="#" id="btnn">Choose Your Card</a>
+</div>
+<div class="abt" id="abt">
+    <h1>
+        Your ambition to grow is what sets you apart.
+    </h1>
+</div>
+
+
+    <table id="customers">
+        <tr>
+          <th>Bitcoin BTC</th>
+          <th>$23,731.87</th>
+          <th>+4.66%</th>
+        <th>$448,835,862,501.38</th>
+        </tr>
+        <tr>
+          <th>Ethereum ETH</th>
+          <th>$1,625.46</th>
+          <th>+7.56%</th>
+          <th>$194,665,949,359.14</th>
+        </tr>
+        <tr>
+        
+        </tr>
+        <tr>
+          <th>Cardano ADA</th>
+          <th>$0.507250</th>
+          <th>+4.34%</th>
+          <th>$16,823,253,717.87</th>
+        </tr>
+        <tr>
+        
+        </tr>
+        <tr>
+          <th>Dogecoin DOGE</th>
+          <th>$0.069917</th>
+          <th>+3.36%</th>
+          <th>$9,270,681,327.41</th>
+        </tr>
+        <tr>
+         
+        </tr>
+        <tr>
+          <th>Polkadot DOT</th>
+          <th>$7.80</th>
+          <th>+5.64%</th>
+          <th>$7,578,763,382.07</th>
+        </tr>
+        </tr>
+      </table>
+      
+</div>
+<div class="last">
+    <a href="https://crypto.com/price" id="btnnn">Learn More</a>
+</div>
+
+
+<div class="abouj">
+    <img src="images/earn-phone.webp" alt="img">
+    <h1>CRYPTO EARN </h1>
+    <h2>Deposit crypto,<br>
+        earn rewards</h2>
+        <h3>Choose from 40+ cryptocurrencies and stablecoins.</h3>
+        <a href="#" id="btnn">Calculate rewards -> </a>
+  </div>
+  
+  
+
+   
+    <script>
+        let stars = document.getElementById('stars'); 
+        let moon = document.getElementById('moon'); 
+        let mountains_behind = document.getElementById('mountains_behind'); 
+        let text = document.getElementById('text'); 
+        let btn = document.getElementById('btn'); 
+        let mountains_front = document.getElementById('mountains_front'); 
+        let header = document.querySelector('header');
+        let bcu = document.getElementById('bcu');
+        
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25 +'px';
+            moon.style.top = value*1.05 +'px';
+            mountains_behind.style.top = value *0.5 +'px';
+            mountains_front.style.top = value *0 +'px';
+            text.style.marginRight = value *4 +'px';
+            text.style.marginTop = value *1.5 +'px';
+            btn.style.marginTop = value *1.5 +'px';
+            header.style.top = value  *0.5 +'px'; 
+            bcu.style.right= value *0.5+'px';
+        })
+    </script>
+</body>
+</html>
